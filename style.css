@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/*cabeçalho parallax*/
+body{
+    margin :0;
+    background-color: #210002;
+    font-family: Poppins;
+    font-size: 15px;
+    box-sizing: border-box;
+
+}
+.banner{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.banner .bg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center bottom;
+    transition: 0.1s;
+}
+.banner .bg-1{
+    background-image: url('img/0.png');
+}
+.banner .bg-2{
+    background-image: url('img/1.png');
+}
+.banner .bg-3{
+    background-image: url('img/2.png');
+}
+.banner .bg-4{
+    background-image: url('img/3.png');
+}
+.banner .bg-5{
+    background-image: url('img/4.png');
+}
+.banner .bg-6{
+    background-image: url('img/5.png');
+}
+.banner .bg-7{
+    background-image: url('img/6.png');
+}
+.banner .bg-8{
+    background-image: url('img/7.png');
+}
+.banner .bg-9{
+    background-image: url('img/8.png');
+}
+.banner  h1{
+    position: absolute;
+    top: 2%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 11rem;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
+.intro{
+    min-height: 50vh;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.intro p{
+    width: 700px;
+    max-width: 100%;
+    text-align: center;
+}
+
+
+/************* modificar *****************/
+.centri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.centri a img{
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+}
+
+.animation-show{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.7s;
+}
+.active .animation-show{
+    transform: translateY(0);
+    opacity: 1;
+}
+.animation-show:nth-child(2){
+    transition-delay: 0.3s;
+}
+.animation-show:nth-child(3){
+    transition-delay: 0.6s;
+}
+.animation-show:nth-child(4){
+    transition-delay: 0.9s;
+}
+
+
+@media screen and (max-width: 768px){
+    .banner h1{
+        font-size: 5rem;
+    }
+}
+
+
+/*cards*/
+.contanime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    
+  }
+  
+  .card{
+    height: 500px;
+    color: #fff;
+    background-image: url(./img/2.png);
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 1px rgb(84, 84, 109) solid;
+  
+  }
+  
+  .card_imagem{
+    height: 180px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px;
+  }
+  
+  .car-1{
+    background-image: url(./img/9.webp);
+  }
+  
+  .car-2{
+    background-image: url(./img/12.jpg);
+  }
+  
+  
+  .car-3{
+    background-image: url(./img/10.webp);
+  }
+  
+  .car-4{
+    background-image: url(./img/11.jpg);
+  }
+  
+  .car-5{
+    background-image: url(./img/13.webp);
+    padding: 0;
+  }
+  
+  .card h2{
+  padding: 10px;
+  }
+  
+  .card p{
+    padding: 2px;
+    text-align: center;
+  }
+  
+  .card a {
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #00ecc0, #f54c40, #f46cc6, #44e3d3);
+    background-size: 400% 100%;
+    animation: LOANDING 10s linear infinite alternate;
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .card:hover{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+  }
+  
+  
+  @keyframes LOANDING {
+    0%{
+      background-position-x: 0%;
+    }
+    100%{
+      background-position: 400%;
+    }
+  }
+
+
+
+
+
+/*Habilidades*/
+
+.titleProjects{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.titleProjects h1{
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+  
+.titleProjects p{
+    ackground-color: var(--roxo-dark-transparencia);
+    width: auto;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    opacity: 0.6;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.techs{
+    width: 90vh;
+    Margin: 0 auto; 
+}
+
+.techs .techImage{
+    display: inline-flex;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+
+
+/*projetos*/
+
+.cima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.ner{
+    margin-top: 30px;
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.ner .cd{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.ner .cd:hover{
+    height: 420px;
+
+}
+
+.ner .cd .imgbx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -20%;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.ner .cd .imgbx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.ner .cd .ten{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden ;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.ner .cd:hover .ten{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition: 0.3s;
+
+}
+
+.cima a{
+   display: inline-block;
+   padding: 5px 20px;
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 10px;
+   letter-spacing: 2px;
+   border-radius: 40px;
+   background: linear-gradient(90deg, #ff7f27, #55e7fc);
+}
+
+
+
+.end{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 80vh;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #ff7f27 ;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social,
+footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social li, 
+footer .menu li{
+    list-style: none;
+}
+
+footer .social li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5;
+
+}
+footer .social li a:hover{
+      transform: translateY(-10px);
+}
+
+footer .menu li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+
+}
+
+footer .menu li a:hover{
+    opacity: 1;
+
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+
+}
+footer .wave{
+position: absolute;
+top: -100px;
+left: 0;
+width: 100%;
+height: 100px;
+background: url(./img/wave.png);
+background-size: 1000px 100px;
+
+
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animatewave 4s linear infinite;
+}
+
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animatewave_02 4s linear infinite;
+}
+
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animatewave 3s linear infinite;
+}
+
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animatewave_02 2s linear infinite;
+}
+
+
+
+@keyframes  animatewave
+{
+  0%
+  {
+    background-position-x: 1000px;
+  }
+  100%
+  {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes  animatewave_02
+{
+  0%
+  {
+    background-position-x: 0px;
+  }
+  100%
+  {
+    background-position-x: 1000px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
